@@ -1,0 +1,61 @@
+cmake:
+  application:
+    configuration-dir: '/home/dives/workspace/zephyr_OTA/example-application/DFU_nRF52'
+    source-dir: '/home/dives/workspace/zephyr_OTA/example-application/DFU_nRF52'
+  board:
+    name: 'nrf52dk'
+    path:
+     - '/home/dives/workspace/zephyr_OTA/zephyr/boards/nordic/nrf52dk'
+    qualifiers: 'nrf52832'
+    revision: ''
+  devicetree:
+    bindings-dirs:
+     - '/home/dives/workspace/zephyr_OTA/zephyr/dts/bindings'
+    files:
+     - '/home/dives/workspace/zephyr_OTA/zephyr/boards/nordic/nrf52dk/nrf52dk_nrf52832.dts'
+    include-dirs:
+     - '/home/dives/workspace/zephyr_OTA/modules/hal/ambiq/dts'
+     - '/home/dives/workspace/zephyr_OTA/modules/hal/atmel/include'
+     - '/home/dives/workspace/zephyr_OTA/modules/hal/bouffalolab/include'
+     - '/home/dives/workspace/zephyr_OTA/modules/hal/bouffalolab/include/zephyr'
+     - '/home/dives/workspace/zephyr_OTA/modules/hal/gigadevice/include'
+     - '/home/dives/workspace/zephyr_OTA/modules/hal/microchip/include'
+     - '/home/dives/workspace/zephyr_OTA/modules/hal/microchip/dts'
+     - '/home/dives/workspace/zephyr_OTA/modules/hal/nuvoton/dts'
+     - '/home/dives/workspace/zephyr_OTA/modules/hal/nxp/dts'
+     - '/home/dives/workspace/zephyr_OTA/modules/hal/stm32/dts'
+     - '/home/dives/workspace/zephyr_OTA/modules/hal/ti/dts'
+     - '/home/dives/workspace/zephyr_OTA/zephyr/include'
+     - '/home/dives/workspace/zephyr_OTA/zephyr/include/zephyr'
+     - '/home/dives/workspace/zephyr_OTA/zephyr/dts/common'
+     - '/home/dives/workspace/zephyr_OTA/zephyr/dts/vendor'
+     - '/home/dives/workspace/zephyr_OTA/zephyr/dts/rx'
+     - '/home/dives/workspace/zephyr_OTA/zephyr/dts/x86'
+     - '/home/dives/workspace/zephyr_OTA/zephyr/dts/xtensa'
+     - '/home/dives/workspace/zephyr_OTA/zephyr/dts/sparc'
+     - '/home/dives/workspace/zephyr_OTA/zephyr/dts/riscv'
+     - '/home/dives/workspace/zephyr_OTA/zephyr/dts/posix'
+     - '/home/dives/workspace/zephyr_OTA/zephyr/dts/arm64'
+     - '/home/dives/workspace/zephyr_OTA/zephyr/dts/arm'
+     - '/home/dives/workspace/zephyr_OTA/zephyr/dts/arc'
+     - '/home/dives/workspace/zephyr_OTA/zephyr/dts'
+  kconfig:
+    files:
+     - '/home/dives/workspace/zephyr_OTA/zephyr/boards/nordic/nrf52dk/nrf52dk_nrf52832_defconfig'
+     - '/home/dives/workspace/zephyr_OTA/example-application/DFU_nRF52/prj.conf'
+    user-files:
+     - '/home/dives/workspace/zephyr_OTA/example-application/DFU_nRF52/prj.conf'
+  toolchain:
+    name: 'zephyr'
+    path: '/home/dives/zephyr-sdk-1.0.1'
+  vendor-specific:
+    nordic:
+      svdfile: '/home/dives/workspace/zephyr_OTA/modules/hal/nordic/nrfx/bsp/stable/mdk/nrf52.svd'
+  zephyr:
+    version: '4.4.99'
+    zephyr-base: '/home/dives/workspace/zephyr_OTA/zephyr'
+version: '0.1.0'
+west:
+  command: '/home/dives/zephyr_env/bin/west build -p always -b nrf52dk/nrf52832'
+  topdir: '/home/dives/workspace/zephyr_OTA'
+  version: '1.5.0'
