@@ -4262,8 +4262,8 @@ events:
     checks:
       - "Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS"
     directories:
-      source: "/home/dives/workspace/zephyr_OTA/example-application/DFU_nRF52/build/CMakeFiles/CMakeScratch/TryCompile-lJZbrM"
-      binary: "/home/dives/workspace/zephyr_OTA/example-application/DFU_nRF52/build/CMakeFiles/CMakeScratch/TryCompile-lJZbrM"
+      source: "/home/dives/workspace/zephyr_OTA/example-application/DFU_nRF52/build/CMakeFiles/CMakeScratch/TryCompile-VBtha9"
+      binary: "/home/dives/workspace/zephyr_OTA/example-application/DFU_nRF52/build/CMakeFiles/CMakeScratch/TryCompile-VBtha9"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -4273,11 +4273,11 @@ events:
       variable: "C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS"
       cached: true
       stdout: |
-        Change Dir: '/home/dives/workspace/zephyr_OTA/example-application/DFU_nRF52/build/CMakeFiles/CMakeScratch/TryCompile-lJZbrM'
+        Change Dir: '/home/dives/workspace/zephyr_OTA/example-application/DFU_nRF52/build/CMakeFiles/CMakeScratch/TryCompile-VBtha9'
         
-        Run Build Command(s): /usr/bin/ninja -v cmTC_de3f1
-        [1/2] /home/dives/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc -DC_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS  -nostartfiles -nostdlib -isystem "/home/dives/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/include" -isystem "/home/dives/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/include" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0 -fuse-ld=bfd -std=c99   -Wformat-signedness -o CMakeFiles/cmTC_de3f1.dir/src.c.obj -c /home/dives/workspace/zephyr_OTA/example-application/DFU_nRF52/build/CMakeFiles/CMakeScratch/TryCompile-lJZbrM/src.c
-        [2/2] : && /home/dives/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc -nostartfiles -nostdlib -isystem "/home/dives/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/include" -isystem "/home/dives/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/include" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0 -fuse-ld=bfd  CMakeFiles/cmTC_de3f1.dir/src.c.obj -o cmTC_de3f1   && :
+        Run Build Command(s): /usr/bin/ninja -v cmTC_10160
+        [1/2] /home/dives/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc -DC_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS  -nostartfiles -nostdlib -isystem "/home/dives/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/include" -isystem "/home/dives/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/include" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0 -fuse-ld=bfd -std=c99   -Wformat-signedness -o CMakeFiles/cmTC_10160.dir/src.c.obj -c /home/dives/workspace/zephyr_OTA/example-application/DFU_nRF52/build/CMakeFiles/CMakeScratch/TryCompile-VBtha9/src.c
+        [2/2] : && /home/dives/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc -nostartfiles -nostdlib -isystem "/home/dives/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/include" -isystem "/home/dives/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/14.3.0/include" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0 -fuse-ld=bfd  CMakeFiles/cmTC_10160.dir/src.c.obj -o cmTC_10160   && :
         
       exitCode: 0
   -
@@ -5107,4 +5107,75 @@ events:
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PROGRAM_PATH:
         - "/bin"
+...
+
+---
+events:
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/dives/workspace/zephyr_OTA/zephyr/cmake/compiler/gcc/target.cmake:8 (find_program)"
+      - "/home/dives/workspace/zephyr_OTA/zephyr/cmake/modules/FindTargetTools.cmake:116 (include)"
+      - "/home/dives/workspace/zephyr_OTA/zephyr/cmake/modules/kernel.cmake:25 (find_package)"
+      - "/home/dives/workspace/zephyr_OTA/zephyr/cmake/modules/zephyr_default.cmake:146 (include)"
+      - "/home/dives/workspace/zephyr_OTA/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "/home/dives/workspace/zephyr_OTA/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:97 (include_boilerplate)"
+      - "CMakeLists.txt:8 (find_package)"
+    mode: "program"
+    variable: "CMAKE_C_COMPILER"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "/home/dives/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc"
+    candidate_directories:
+      - "/home/dives/zephyr-sdk-1.0.1/gnu/"
+    found: "/home/dives/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "/home/dives/zephyr-sdk-1.0.1/hosttools/sysroots/x86_64-pokysdk-linux/usr"
+      ENV{PATH}:
+        - "/home/dives/zephyr_env/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/usr/lib/wsl/lib"
+        - "/mnt/c/Program Files/Common Files/Oracle/Java/javapath"
+        - "/mnt/c/Program Files (x86)/Common Files/Oracle/Java/java8path"
+        - "/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath"
+        - "/mnt/c/Program Files/National Instruments/Shared/OpenVINO/"
+        - "/mnt/c/WINDOWS/system32"
+        - "/mnt/c/WINDOWS"
+        - "/mnt/c/WINDOWS/System32/Wbem"
+        - "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/"
+        - "/mnt/c/WINDOWS/System32/OpenSSH/"
+        - "/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin/"
+        - "/mnt/c/Program Files/IVI Foundation/VISA/Win64/Bin/"
+        - "/mnt/c/Program Files (x86)/National Instruments/Shared/LabVIEW CLI"
+        - "/mnt/c/Program Files (x86)/IVI Foundation/IVI/bin"
+        - "/mnt/c/Program Files/IVI Foundation/IVI/bin"
+        - "/mnt/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin"
+        - "/mnt/c/MinGW/bin"
+        - "/mnt/c/Program Files/TortoiseGit/bin"
+        - "/mnt/c/Program Files/Git/cmd"
+        - "/mnt/c/Program Files/dotnet/"
+        - "/mnt/c/Program Files/Nordic Semiconductor/nrf-command-line-tools/bin/"
+        - "/mnt/c/Users/dives/Downloads/nrfutil"
+        - "/mnt/c/Program Files/usbipd-win/"
+        - "/mnt/c/MinGW/bin"
+        - "/mnt/c/Users/dives/AppData/Local/Programs/Microsoft VS Code/bin"
+        - "/mnt/c/Users/dives/Downloads/nrfutil.bin"
+        - "/snap/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
 ...
